@@ -18,6 +18,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('test',  [Web3LoginController::class, 'message']);
 Route::post('/web3-login', [Web3LoginController::class, 'verify']);
 
